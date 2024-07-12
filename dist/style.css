@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.exbold {
+  font-weight: 800;
+}
+
+:root {
+  --off-white: #FFFDFA;
+  --dark-space-blue: #00001A;
+  --gunmetal: #5E607A;
+  --lt-vermillion: #F15D51;
+  --silver: #C5C6CE;
+  --yellow: #E9AA52;
+}
+
+main {
+  display: grid;
+}/*# sourceMappingURL=style.css.map */
