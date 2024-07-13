@@ -22,6 +22,10 @@ ul {
     list-style: none;
 }
 
+ul a:hover {
+    color: var(--lt-vermillion);
+}
+
 .bold {
     font-weight: 700;
 }
@@ -43,6 +47,11 @@ h2 {
 h3 {
     font-size: 1.25em;
     color: var(--off-white);
+    padding-bottom: 10px;
+}
+
+h3:hover {
+    color: var(--yellow);
 }
 
 h4 {
@@ -53,4 +62,16 @@ h4 {
 h5 {
     font-size: 1.1em;
     color: var(--dark-space-blue);
+}
+
+h5:hover {
+    color: var(--lt-vermillion);
+}
+
+.sidebar-content p {
+    color: silver;
+}
+
+.sec2 p {
+    font-size: 0.95em;
 }

@@ -8,9 +8,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1110px;
     padding-top: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+}
+
+main {
+    max-width: 1110px;
+    margin: auto;
 }
 
 nav ul {
@@ -25,40 +30,94 @@ li a:last-of-type {
     margin-right: 0;
 }
 
+//top section 
+
 .sec1 {
     margin: auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    max-width: 1200px;
-    height: 511px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 .main-container {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    padding-right: 30px;
+
 }
 
 .main-art {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 25px;
+}
+
+.main-art-title {
+    padding-right: 30px;
+}
+
+.main-art-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.img-cont {
+    padding-right: 30px;
+}
+
+#main-button {
+    width: 185px;
+    height: 48px;
+    background-color: var(--lt-vermillion);
+    color: var(--dark-space-blue);
+    border: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#main-button:hover {
+    background-color: var(--dark-space-blue);
+    color: var(--off-white);
+    cursor: pointer;
 }
 
 .sidebar {
     grid-column: 3 /span 1;
     grid-row: 1 / span 2;
     background-color: var(--dark-space-blue);
-
 }
+
+.sidebar-content {
+    padding: 31px 24px;
+}
+
+.sidebar-content h2 {
+    padding-bottom: 25px;
+}
+
+.sidebar-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    border-color: var(--gunmetal);
+    margin: 25px 0;
+}
+
+//bottom section
 
 .sec2 {
     padding-top: 71px;
     padding-bottom: 71px;
     margin: auto;
-    max-width: 1200px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sec2 article {
@@ -67,8 +126,8 @@ li a:last-of-type {
 }
 
 .sec2-art {
-    padding: 5px 30px 5px 24px;
+    padding: 0 30px 0 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
