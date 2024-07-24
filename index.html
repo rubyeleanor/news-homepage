@@ -30,42 +30,49 @@
   <header>
     <div class="logo"><img src="./assets/images/logo.svg" alt="logo">
     </div>
-    <div class="menu">
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">New</a></li>
-          <li><a href="">Popular</a></li>
-          <li> <a href="">Trending</a></li>
-          <li><a href="">Categories</a></li>
+
+    <nav>
+      <span id="nav-label" hidden>Navigation</span>
+      <button id="OpenBtn" class="nav-open" aria-expanded="false" aria-labelledby="nav-label">
+        <img src="./assets/images/icon-menu.svg" alt="">
+      </button>
+      <div class="menu" role="dialog" aria-labelledby="nav-label">
+        <button class="close-button" id="CloseBtn" aria-label="close">
+          <img src="./assets/images/icon-menu-close.svg" alt="">
+        </button>
+        <ul class="menu-links">
+          <li class="menu-item"><a class="menu-link" href="">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="">New</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Popular</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Trending</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Categories</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
 
   </header>
+
+
   <main>
     <section class="sec1">
-      <div class="main-container">
-        <div class="img-cont">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg" n width="100%"
-              height="auto">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="main image">
-          </picture>
-        </div>
-        <article class="main-art">
-          <div class="main-art-title">
-            <h1 class="header exbold">The Bright Future of Web 3.0?</h1>
-          </div>
-          <div class="main-art-cont">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
-              hands
-              of the people. But is it really fulfilling its promise?</p>
-            <button id="main-button">Read more</button>
-          </div>
-        </article>
-
+      <div class="img-cont">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg" n width="100%"
+            height="auto">
+          <img class="mobile-img" src="./assets/images/image-web-3-mobile.jpg" alt="main image">
+        </picture>
       </div>
+
+      <div class="main-art-title">
+        <h1 class="header exbold">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="main-art-cont">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+          hands
+          of the people. But is it really fulfilling its promise?</p>
+        <button id="main-button">Read more</button>
+      </div>
+
 
       <div class="sidebar">
         <div class="sidebar-content">
@@ -143,8 +150,7 @@
     </div>
   </footer>
 
-
-
+  <script src="./app/js/script.js"></script>
 
 </body>
 
