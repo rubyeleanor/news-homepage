@@ -178,6 +178,7 @@ header button {
 
 li a {
   margin: auto 20px;
+  color: var(--gunmetal);
 }
 
 li a:last-of-type {
@@ -280,6 +281,15 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--lt-vermillion);
 }
 
 @media screen and (max-width: 768px) {
