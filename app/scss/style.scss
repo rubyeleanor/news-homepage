@@ -84,6 +84,11 @@ main {
     grid-template-rows: 1.5fr 1fr;
 }
 
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .img-cont {
     padding-right: 30px;
     grid-column: 1 / span 2;
